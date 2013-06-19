@@ -120,6 +120,8 @@
         imageViewFrame.origin.y = imageViewFrame.origin.y + self.depth;
     }
     
+    frame.origin.y += 3;
+
     self.titleLabel.frame = frame;
     self.imageView.frame = imageViewFrame;
 }
@@ -285,7 +287,9 @@
     CGContextAddArcToPoint(context, lx, ty, lx, cy, radius);
     CGContextClosePath(context);
     
+    CGContextSetStrokeColorWithColor(context, _sideColorNormal.CGColor);
     CGContextDrawPath(context, kCGPathFillStroke);
+    CGContextStrokePath(context);
 }
 
 @end
