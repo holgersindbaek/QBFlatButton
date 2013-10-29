@@ -287,9 +287,9 @@
     CGContextAddArcToPoint(context, lx, ty, lx, cy, radius);
     CGContextClosePath(context);
     
-    CGContextSetStrokeColorWithColor(context, _sideColorNormal.CGColor);
-    CGContextDrawPath(context, kCGPathFillStroke);
-    CGContextStrokePath(context);
+    // CGContextSetStrokeColorWithColor(context, _sideColorNormal.CGColor);
+    // CGContextDrawPath(context, kCGPathFillStroke);
+    // CGContextStrokePath(context);
 }
 
 @end
