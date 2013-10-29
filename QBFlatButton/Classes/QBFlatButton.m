@@ -267,7 +267,7 @@
 }
 
 - (void)drawRoundedRect:(CGRect)rect radius:(CGFloat)radius context:(CGContextRef)context
-{	
+{ 
     rect.origin.x += 0.5;
     rect.origin.y += 0.5;
     rect.size.width -= 1.0;
@@ -279,7 +279,7 @@
     CGFloat by = CGRectGetMinY(rect);
     CGFloat cy = CGRectGetMidY(rect);
     CGFloat ty = CGRectGetMaxY(rect);
-	
+  
     CGContextMoveToPoint(context, lx, cy);
     CGContextAddArcToPoint(context, lx, by, cx, by, radius);
     CGContextAddArcToPoint(context, rx, by, rx, cy, radius);
