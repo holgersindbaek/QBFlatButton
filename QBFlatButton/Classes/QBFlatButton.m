@@ -288,8 +288,8 @@
     CGContextClosePath(context);
     
     // CGContextSetStrokeColorWithColor(context, _sideColorNormal.CGColor);
-    // CGContextDrawPath(context, kCGPathFillStroke);
-    // CGContextStrokePath(context);
+    CGContextDrawPath(context, kCGPathFillStroke);
+    CGContextStrokePath(context);
 }
 
 @end
